@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomePage.css';
+import Navbar from './Navbar';
 
 const clubs = [
   { name: 'LPBTYC', region: 'Tunis' },
@@ -35,16 +36,7 @@ const benMembers = [
 function HomePage() {
   return (
     <div className="home-page">
-      <nav className="navbar">
-        <div className="nav-logo">ASSOCIATION DES CLUBS DE JEUNES</div>
-        <ul className="nav-links">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">À propos de l'association</a></li>
-          <li><a href="#clubs">Clubs locaux</a></li>
-          <li><a href="#projects">Projets nationaux</a></li>
-          <li><a href="#ben">BEN</a></li>
-        </ul>
-      </nav>
+      <Navbar />
 
       <section className="hero">
         <div className="hero-content">
