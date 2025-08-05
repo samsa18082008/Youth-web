@@ -8,21 +8,19 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="navbar">
-      <div className="nav-logo">
-        <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
-      </div>
-      <div className={`nav-menu ${menuOpen ? 'open' : ''}`}>
+      <div className="nav-logo">ASSOCIATION YOUTH CLUBs</div>
+      <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#clubs">Local Clubs</a>
         <a href="#projects">National Projects</a>
         <a href="#ben">BEN</a>
         <a href="#signup" className="nav-cta">S’inscrire</a>
-      </div>
+      </nav>
       <button className="nav-toggle" onClick={toggleMenu} aria-label="Toggle navigation">
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+        <span className="bar" />
+        <span className="bar" />
+        <span className="bar" />
       </button>
     </header>
   );
