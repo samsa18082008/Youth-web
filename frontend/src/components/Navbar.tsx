@@ -8,7 +8,9 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="navbar">
-      <div className="nav-logo">ASSOCIATION YOUTH CLUBs</div>
+      <div className="nav-logo">
+        <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
+      </div>
       <div className={`nav-menu ${menuOpen ? 'open' : ''}`}>
         <a href="#">Home</a>
         <a href="#about">About</a>
